@@ -16,7 +16,7 @@ You can use cURL to make a POST request to retrieve the temperature of a city. H
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d "{\"query\": \"Istanbul\"}" https://evatro-d937c0d6a1b8.herokuapp.com/temperature
-
+```
 ## Features
 
 - Supports passing the search query via POST and GET requests.
