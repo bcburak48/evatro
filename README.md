@@ -10,6 +10,13 @@ You can access the web service using the following publicly available endpoint:
 
 Simply click the link above or copy and paste it into your web browser to retrieve temperature information for a specific city.
 
+## Sample cURL Request
+
+You can use cURL to make a POST request to retrieve the temperature of a city. Here's an example cURL request:
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d "{\"query\": \"Istanbul\"}" https://evatro-d937c0d6a1b8.herokuapp.com/temperature
+
 ## Features
 
 - Supports passing the search query via POST and GET requests.
