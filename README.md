@@ -2,6 +2,14 @@
 
 This is a Java web service that provides the current temperature of a given city. It supports both POST and GET requests to retrieve temperature information.
 
+## Accessing the Web Service (Publicly Available)
+
+You can access the web service using the following publicly available endpoint:
+
+- [City Temperature Web Service](https://evatro-d937c0d6a1b8.herokuapp.com/temperature?q=Istanbul)
+
+Simply click the link above or copy and paste it into your web browser to retrieve temperature information for a specific city.
+
 ## Features
 
 - Supports passing the search query via POST and GET requests.
