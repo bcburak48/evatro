@@ -41,8 +41,8 @@ class TemperatureControllerTest {
         mockMvc.perform(get("/temperature?q=Istanbul")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.data.temperature").value("8"))
-                .andExpect(jsonPath("$.data.name").value("Istanbul"));
+                .andExpect(jsonPath("$.response.temperature").value("8"))
+                .andExpect(jsonPath("$.response.name").value("Istanbul"));
     }
 
     @Test

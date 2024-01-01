@@ -31,9 +31,9 @@ public class TemperatureController {
 
     private ResponseEntity<GenericResponse> createResponse(String cityName) {
         return service.getTemperature(cityName)
-                .map(temp -> ResponseEntity.ok(new GenericResponse("success", temp, null)))
+                .map(temp -> ResponseEntity.ok(new GenericResponse("success", temp)))
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND)
-                        .body(new GenericResponse("failure", null, "City not found")));
+                        .body(new GenericResponse("failure", null)));
     }
 }
 
